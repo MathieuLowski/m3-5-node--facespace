@@ -43,7 +43,6 @@
   font-weight: 700;
   width: calc(100% - 4px);
 }
-
 @media screen and (min-width: 600px) {
   .profile-page__user {
     display: flex;

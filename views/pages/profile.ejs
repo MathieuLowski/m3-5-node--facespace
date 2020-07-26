@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<div class="profile-page__user"></div>
+<div class="profile-page--banner"></div>
+ <h2 class="profile-page__user"><%= user.name%></h2>
+<img class="profile-page__user--avatar" src="<%= user.avatarUrl %> ">
+<h3 class="profile-page__friends"><%= user.name %>'s Friends</h3>
+    <div>
+    <ul class="profile-page__friends">
+        <% for(let i=0; i<friends.length; i++) {%>          
+            <li class="profile-page__friends--list">
+            <p> <%=`${friends[i].name}` %></p> 
+            <img class="friend img" src= <%= `${friends[i].avatarUrl}` %>> 
+            </li>
+        <% } %>
+    </ul>
+</div>
+<%- include('../partials/footer') %>
+
+
